@@ -18,5 +18,5 @@ http.listen(port, () => console.log(`Game server running on port ${port}!`));
 // Server loop
 setInterval(function () {
     io.emit("sync", {name: 12345});
-}, 1000);
+}, 50);
 
